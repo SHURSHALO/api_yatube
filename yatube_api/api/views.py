@@ -12,12 +12,12 @@ class PostViewSet(viewsets.ModelViewSet):
     serializer_class = PostSerializer
     permission_classes = (
         OnlyAuthorHasPerm,
-    )  # Требуем аутентификацию пользователя для доступа к эндпоинтам
+    )
 
     def perform_create(self, serializer):
         serializer.save(
             author=self.request.user
-        )  # Добавление пользователя как автора при создании объектов
+        )
 
 
 class GroupViewSet(viewsets.ReadOnlyModelViewSet):
