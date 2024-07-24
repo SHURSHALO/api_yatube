@@ -6,7 +6,7 @@
 ## Установка
 1. Клонируйте репозиторий на свой компьютер:
 
-   git@github.com:SHURSHALO/api_yatube.git
+git@github.com:SHURSHALO/api_yatube.git
 
 2. Создайте виртуальное окружение и активируйте его:
 
