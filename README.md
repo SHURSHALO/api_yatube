@@ -5,29 +5,33 @@
 
 ## Установка
 1. Клонируйте репозиторий на свой компьютер:
-
-git@github.com:SHURSHALO/api_yatube.git
-
+```
+git clone git@github.com:SHURSHALO/api_yatube.git
+```
 2. Создайте виртуальное окружение и активируйте его:
-
-   python -m venv venv 
-   venv\Scripts\activate # Для Windows
-
+```
+py -3.9 -m venv venv
+```
+```
+source venv/Scripts/activate
+```
 3. Установите зависимости:
-
-   pip install -r requirements.txt
-
+```
+pip install -r requirements.txt
+```
 4. Примените миграции:
-
-   python manage.py migrate
-
+```
+python manage.py migrate
+```
 5. Создайте суперпользователя:
-
-   python manage.py createsuperuser
-
+```
+python manage.py createsuperuser
+```
 6. Запустите сервер:
-
-   python manage.py runserver
+```
+python manage.py runserver
+```
+Документация доступна по: http://127.0.0.1:8000/redoc/
 
 ## Использование
 
